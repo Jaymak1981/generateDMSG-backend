@@ -15,8 +15,11 @@ Including another URLconf
 """
 from django.conf import settings
 from django.conf.urls.static import static
+
 from django.contrib import admin
-from django.urls import path
+from django.conf.urls import url
+from django.urls import path, include
+
 
 from profiles import views as profiles_views
 from contact import views as contact_views
@@ -26,6 +29,7 @@ urlpatterns = [
     path('', profiles_views.home, name='home'),
     path('about/', profiles_views.about, name='about'),
     path('contact/', contact_views.contact, name='contact'),
+    path('accounts/', include('allauth.urls')),
 ]
 
 if settings.DEBUG:
