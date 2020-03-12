@@ -33,6 +33,7 @@ DEBUG = True
 ALLOWED_HOSTS = ['generatedmsg-app.herokuapp.com']
 
 
+
 # Application definition
 
 INSTALLED_APPS = [
