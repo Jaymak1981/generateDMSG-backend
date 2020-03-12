@@ -8,6 +8,13 @@ verify_ssl = true
 [packages]
 django = "*"
 stripe = "*"
+django-cors-headers = "*"
+gunicorn = "*"
+whitenoise = "*"
+dj-database-url = "*"
+django-heroku = "*"
+python-decouple = "*"
+django-crispy-forms = "*"
 
 [requires]
 python_version = "3.7"
