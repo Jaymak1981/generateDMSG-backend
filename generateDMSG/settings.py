@@ -49,6 +49,8 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'stripe',
+    'checkout',
 ]
 
 MIDDLEWARE = [
@@ -181,3 +183,14 @@ ACCOUNT_USERNAME_REQUIRED = True
 ACCOUNT_PASSWORD_INPUT_RENDER_VALUE = False
 ACCOUNT_PASSWORD_MIN_LENGTH = 6
 ACCOUNT_LOGIN_ON_EMAIL_CONFIRMATION = True
+
+
+# stripe stuff
+
+# test keys
+STRIPE_PUBLISHABLE_KEY = 'pk_test_9jhLTq6QZZ8QuZCxLVexffmO00AQtVowNF'
+STRIPE_SECRET_KEY = 'sk_test_7hz9YYJiclbCY3zcT3X9Y3cr00jA2js8Ps'
+
+# live keys
+STRIPE_PUBLISHABLE_KEY = ''
+STRIPE_SECRET_KEY = ''
