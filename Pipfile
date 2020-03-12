@@ -15,6 +15,7 @@ dj-database-url = "*"
 django-heroku = "*"
 python-decouple = "*"
 django-crispy-forms = "*"
+django-allauth = "*"
 
 [requires]
 python_version = "3.7"
