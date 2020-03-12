@@ -1,1 +1,1 @@
-web: gunicorn generateDMSG_django.wsgi
+web: gunicorn generateDMSG.wsgi
